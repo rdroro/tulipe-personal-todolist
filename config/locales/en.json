@@ -1,0 +1,8 @@
+{
+  "app.name": "Tulipe",
+
+  "state.new": "New",
+  "state.in-progress": "In Progress",
+  "state.terminated": "Terminated",
+  "state.canceled": "Canceled"
+}

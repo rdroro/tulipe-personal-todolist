@@ -1,0 +1,71 @@
+@font-face
+{
+	font-family: Averia;
+	src: url('../fonts/AveriaSerif-BoldItalic.ttf');
+}
+@font-face
+{
+	font-family: Champagne;
+	src: url('../fonts/Champagne & Limousines.ttf');
+}
+
+body {
+	/*background: url('../images/black_lozenge.png');*/
+	background-color: #1f1f1f;
+	font-size: 18px;
+}
+
+h1 {
+	color: #fff!important;
+}
+
+.task {
+	border-radius: 5px;
+	/*background: #027eba;*/
+	background: #fff;
+	width: 255px;
+	position: relative;
+	margin: 10px;
+	float: left;
+}
+
+.title {
+	padding: 10px;
+	font-family: "Champagne";
+	font-size: 36px;
+	margin-bottom: 10px;
+	color: #555;
+}
+
+.footer {
+	position: relative;
+	top: auto;
+	bottom: 0;
+	background: #fff;
+	height: 34px;
+	border-radius: 5px;
+}
+
+.state {
+	background:  #027eba;
+	width: 225px;
+	height: 34px;
+	padding-top: 7px;
+	float: left;
+	border-radius: 0 0 0 5px;
+	padding-left: 20px;
+	color: #fff;
+	font-family: "Champagne";
+}
+
+.delete {
+	background: #036d9f;
+	padding-left: 9px;
+	padding-top: 10px;
+	height: 34px;
+	width: 30px;
+	float: left;
+	border-radius: 0 0 5px 0;
+	color : white;
+	font-size: small;
+}

@@ -1,0 +1,48 @@
+{
+  "data": {
+    "task": [
+      {
+        "title": "Faire vaissell",
+        "Description": "Demo",
+        "parent": 0,
+        "state": "new",
+        "createdAt": "2013-10-07T18:34:06.311Z",
+        "updatedAt": "2013-10-07T18:34:06.311Z",
+        "id": 1
+      },
+      {
+        "title": "Faire vaissell",
+        "Description": "Demo",
+        "parent": 0,
+        "state": "in-progress",
+        "createdAt": "2013-10-07T18:34:27.298Z",
+        "updatedAt": "2013-10-07T18:34:27.298Z",
+        "id": 2
+      }
+    ]
+  },
+  "schema": {
+    "task": {
+      "id": {
+        "type": "integer",
+        "autoIncrement": true,
+        "defaultsTo": "AUTO_INCREMENT",
+        "primaryKey": true,
+        "unique": true
+      },
+      "createdAt": {
+        "type": "datetime",
+        "default": "NOW"
+      },
+      "updatedAt": {
+        "type": "datetime",
+        "default": "NOW"
+      }
+    }
+  },
+  "counters": {
+    "task": {
+      "id": 2
+    }
+  }
+}
