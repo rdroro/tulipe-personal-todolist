@@ -19,6 +19,10 @@ h1 {
 	color: #fff!important;
 }
 
+.mouse-pointer {
+	cursor: pointer !important;
+}
+
 .task {
 	border-radius: 5px;
 	/*background: #027eba;*/

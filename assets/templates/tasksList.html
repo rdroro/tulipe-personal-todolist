@@ -1,0 +1,14 @@
+<div ng-repeat='task in tasks' class="task">
+	<div class="title">{{task.title}}</div>
+	<div class="footer">
+		<div class="state">{{task.state}}</div>
+		<div class="delete">
+			<span ng-click='delete(task.id)' class="glyphicon glyphicon-trash mouse-pointer"></span>
+		</div>
+	</div>
+</div>
+
+<form ng-submit='add()'>
+	<input type='text' ng-model='titleText' placeholder='Enter new task'>
+	<input class="btn-primary" type="submit" value="add">
+</form>

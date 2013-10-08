@@ -7,7 +7,7 @@
 
  module.exports = {
 
- 	index: function (req, resp) {
+ 	taskList: function (req, resp) {
  		Task.find().exec(function (err, tasks){
  			resp.view({
  				tasks: tasks
