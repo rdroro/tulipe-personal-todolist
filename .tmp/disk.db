@@ -9,15 +9,6 @@
         "createdAt": "2013-10-07T18:34:06.311Z",
         "updatedAt": "2013-10-07T18:34:06.311Z",
         "id": 1
-      },
-      {
-        "title": "Faire vaissell",
-        "Description": "Demo",
-        "parent": 0,
-        "state": "in-progress",
-        "createdAt": "2013-10-07T18:34:27.298Z",
-        "updatedAt": "2013-10-07T18:34:27.298Z",
-        "id": 2
       }
     ]
   },
@@ -42,7 +33,7 @@
   },
   "counters": {
     "task": {
-      "id": 2
+      "id": 10
     }
   }
 }
