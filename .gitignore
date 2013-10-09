@@ -7,7 +7,7 @@ lib-cov
 *.pid
 *.gz
 
-.tmp/*
+.tmp/**/*
 
 pids
 logs

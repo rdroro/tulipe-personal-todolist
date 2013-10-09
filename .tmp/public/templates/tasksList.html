@@ -1,5 +1,5 @@
 <div ng-repeat='task in tasks' class="task">
-	<div class="title">{{task.title}}</div>
+	<div class="title"><a href="#/task/{{task.id}}" alt=''>{{task.title}}</a></div>
 	<div class="footer">
 		<div class="state">{{task.state}}</div>
 		<div class="delete">

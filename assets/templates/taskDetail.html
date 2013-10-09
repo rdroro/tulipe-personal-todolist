@@ -1,4 +1,14 @@
-<div ng-repeat='task in tasks' class="task">
+<div ng-model='cTask' class="task">
+	<div class="title">{{cTask.title}}</div>
+	<div class="footer">
+		<div class="state">{{cTask.state}}</div>
+		<div class="delete">
+			<span ng-click='delete(cTask.id)' class="glyphicon glyphicon-trash mouse-pointer"></span>
+		</div>
+	</div>
+</div>
+
+<div ng-repeat='task in taskDetail' class="task">
 	<div class="title"><a href="#/task/{{task.id}}" alt=''>{{task.title}}</a></div>
 	<div class="footer">
 		<div class="state">{{task.state}}</div>
