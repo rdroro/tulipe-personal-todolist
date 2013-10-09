@@ -1,3 +1,3 @@
 # tulipe-personal-todolist
 
-**Yet an other TodoList but ... with [Sails.js](sailsjs.org) and (AngularJS)[http://angularjs.org/]
+**Yet an other TodoList but ... with [Sails.js](sailsjs.org) and [AngularJS][http://angularjs.org/] and it's pretty cool**
