@@ -20,5 +20,9 @@
         "name": "Romain Dubos",
         "url": "https://github.com/rdroro"
         },
-    "license": ""
+    "license": "", 
+    "engines": {
+    "node": "0.10.20",
+    "npm": "1.3.11"
+  }
 }
