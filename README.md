@@ -10,8 +10,7 @@ npm v1.3.11 or higher
 
 + Download archive from github [here](https://github.com/rdroro/tulipe-personal-todolist/archive/master.zip)
 + Unzip archive
-+ Run npm install in unzipped folder
-+ Run npm install to checkout depencies
++ Run npm install in unzipped folder to checkout depencies
 + To lauch application run : node app.js
 
 Application is now available from [http://localhost:1337](http://localhost:1337)
