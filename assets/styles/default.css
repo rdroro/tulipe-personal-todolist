@@ -9,6 +9,10 @@
 	src: url('../fonts/Champagne & Limousines.ttf');
 }
 
+.mouse-pointer {
+	cursor: pointer !important;
+}
+
 body {
 	/*background: url('../images/black_lozenge.png');*/
 	background-color: #1f1f1f;
@@ -19,8 +23,56 @@ h1 {
 	color: #fff!important;
 }
 
-.mouse-pointer {
-	cursor: pointer !important;
+.container {
+	/*background: #ccc;*/
+}
+
+#add-task-div {
+	margin-top: 5px;
+}
+
+#btn-add-task {
+	margin-left: 10px;
+}
+
+#task-div {
+	margin-top: 10px;
+}
+
+.task-categogy {
+	background: #fff;
+	border: 2px solid #1f1f1f;
+	padding: 0!important;
+	border-radius: 5px;
+}
+
+.task-categogy-title {
+	padding: 20px;
+	background-color: #f6fafe;
+	color: #6f8ba9;
+}
+
+.new-task {
+	color: #627e9c;
+	border-bottom: 1px solid #d7e3f0;
+}
+
+.new-task .sub-task, .task-title{
+	float: left;
+}
+
+.sub-task, .task-title, .task-delete {
+	padding: 20px;
+}
+
+.sub-task {
+	border-right: 1px dotted #d7e3f0;
+	width: 15%;
+}
+
+.task-title {
+	width: 75%;
+	font-size: 14px;
 }
 
 .task {

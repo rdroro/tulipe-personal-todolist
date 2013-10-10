@@ -9,7 +9,7 @@ function TaskListCtrl($scope, $routeParams, Task) {
     var parent = typeof(parent) == "undefined" ? 0 : parent;
     var task = {
       title: $scope.titleText,
-      state: 'new',
+      state: 'important',
       parent: parent
     };
 

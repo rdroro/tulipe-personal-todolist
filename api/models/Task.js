@@ -13,7 +13,7 @@ module.exports = {
   	title: {
   		type: "string",
   		minLength: 1,
-  		maxLength: 30
+  		maxLength: 200
   	},
   	description: {
   		type: "string",
@@ -22,7 +22,7 @@ module.exports = {
   	parent: "integer",
   	state: {
   		type: "string",
-  		in: ['new', 'in-progress', 'terminated', 'canceled']
+  		in: ['important', 'project', 'reminder']
   	}
     
   }

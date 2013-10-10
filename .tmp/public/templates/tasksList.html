@@ -1,14 +1,50 @@
-<div ng-repeat='task in tasks' class="task">
-	<div class="title"><a href="#/task/{{task.id}}" alt=''>{{task.title}}</a></div>
-	<div class="footer">
-		<div class="state">{{task.state}}</div>
-		<div class="delete">
-			<span ng-click='delete(task.id)' class="glyphicon glyphicon-trash mouse-pointer"></span>
+<div class="container">
+
+	
+	<div class="row" id='add-task-div'>
+		<div class='col-md-9 col-md-offset-1'>
+			<form ng-submit='add()' class="form-inline" role="form">
+				<div class="form-group col-lg-8">
+					<input type="text" class="form-control input-lg" id="titleText" placeholder="Enter new Task here" ng-model='titleText'>
+				</div>
+				<div class="form-group">
+					<select class='form-control input-lg'>
+						<option value='important'>Important</option>
+						<option value='project'>Project</option>
+						<option value='reminder'>Reminder</option>
+					</select>
+				</div>
+				<button type="submit" id='btn-add-task' class="btn btn-primary btn-lg"><span class='glyphicon glyphicon-plus'></span></button>
+			</form>
+		</div>
+	</div>
+
+	<div class="row" id='task-div'>
+		<div class="col-md-4 task-categogy">
+			<div class="task-categogy-title">Important</div>
+
+			<div ng-repeat='task in tasks' class="new-task">
+				<div class="sub-task">2</div>
+				<div class='task-title'>{{task.title}}</div>
+				<div class="task-delete">
+					<span ng-click='delete(task.id)' class="glyphicon glyphicon-trash mouse-pointer"></span>
+				</div>
+			</div>
+
+		</div>
+
+		<div class="col-md-4 task-categogy">
+			<div class="task-categogy-title">Project</div>
+		</div>
+
+		<div class="col-md-4 task-categogy">
+			<div class="task-categogy-title">Reminder</div>
 		</div>
 	</div>
 </div>
 
-<form ng-submit='add()'>
-	<input type='text' ng-model='titleText' placeholder='Enter new task'>
-	<input class="btn btn-primary" type="submit" value="add">
-</form>
+<script type="text/javascript">
+jQuery(document).ready(function($) {
+	$('.dropdown-toggle').dropdown();
+});
+</script>
