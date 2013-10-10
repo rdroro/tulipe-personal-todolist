@@ -12,7 +12,6 @@ function TaskListCtrl($scope, $routeParams, Task) {
   $scope.add = function (parent) {
     var parent = typeof(parent) == "undefined" ? 0 : parent;
     if (typeof($scope.titleText) == "undefined" || typeof($scope.stateText) == "undefined") { return false; }
-    console.log($scope.titleText);
     var task = {
       title: $scope.titleText,
       state: $scope.stateText,
@@ -67,7 +66,6 @@ function TaskDetailCtrl($scope, $routeParams, Task) {
     var task = {
       id:id
     };
-    console.log($scope.taskDetail);
     for (var i = 0; i < $scope.taskDetail.length; i++) {
       if ( $scope.taskDetail[i].id === id ) {
         // var index set the position of the task in $scope.tasks
