@@ -8,6 +8,9 @@
 
 + nodejs v0.10.20 or higher
 + npm v1.3.11 or higher
++ 
+
+**Installation Process**
 
 + Download archive from github [here](https://github.com/rdroro/tulipe-personal-todolist/archive/master.zip)
 + Unzip archive
