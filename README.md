@@ -8,7 +8,6 @@
 
 + nodejs v0.10.20 or higher
 + npm v1.3.11 or higher
-+ 
 
 **Installation Process**
 
