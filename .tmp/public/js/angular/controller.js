@@ -4,12 +4,17 @@
 
 function TaskListCtrl($scope, $routeParams, Task) {
   $scope.tasks = Task.query({parent: 0});
+  $scope.parent = 0;
+
+  // Set the default value of state list for the view
+  $scope.stateText = "important";
 
   $scope.add = function (parent) {
+    console.log(parent);
     var parent = typeof(parent) == "undefined" ? 0 : parent;
     var task = {
       title: $scope.titleText,
-      state: 'important',
+      state: $scope.stateText,
       parent: parent
     };
 
@@ -39,12 +44,14 @@ function TaskListCtrl($scope, $routeParams, Task) {
 
 function TaskDetailCtrl($scope, $routeParams, Task) {
   $scope.cTask = Task.get({id: $routeParams.taskId});
-  console.log($scope.cTask);
+  $scope.parent = $scope.cTask.id;
   $scope.taskDetail = Task.query({parent: $routeParams.taskId});
-}
+   // Set the default value of state list for the view
+   $scope.stateText = "important";
+ }
 
 
 
 
-myApp.controller('TaskListCtrl', ['$scope', '$routeParams', 'Task', TaskListCtrl]);
-myApp.controller('TaskDetailCtrl', ['$scope', '$routeParams', 'Task',  TaskDetailCtrl]);
+ myApp.controller('TaskListCtrl', ['$scope', '$routeParams', 'Task', TaskListCtrl]);
+ myApp.controller('TaskDetailCtrl', ['$scope', '$routeParams', 'Task',  TaskDetailCtrl]);

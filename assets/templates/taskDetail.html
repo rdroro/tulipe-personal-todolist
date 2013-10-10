@@ -1,24 +1,7 @@
-<div ng-model='cTask' class="task">
-	<div class="title">{{cTask.title}}</div>
-	<div class="footer">
-		<div class="state">{{cTask.state}}</div>
-		<div class="delete">
-			<span ng-click='delete(cTask.id)' class="glyphicon glyphicon-trash mouse-pointer"></span>
-		</div>
+<div ng-repeat='task in taskDetail' class="new-task">
+	<div class="sub-task">-</div>
+	<div class='task-title'>{{task.title}}</div>
+	<div class="task-delete">
+		<span ng-click='delete(task.id)' class="glyphicon glyphicon-trash mouse-pointer"></span>
 	</div>
 </div>
-
-<div ng-repeat='task in taskDetail' class="task">
-	<div class="title"><a href="#/task/{{task.id}}" alt=''>{{task.title}}</a></div>
-	<div class="footer">
-		<div class="state">{{task.state}}</div>
-		<div class="delete">
-			<span ng-click='delete(task.id)' class="glyphicon glyphicon-trash mouse-pointer"></span>
-		</div>
-	</div>
-</div>
-
-<form ng-submit='add()'>
-	<input type='text' ng-model='titleText' placeholder='Enter new task'>
-	<input class="btn btn-primary" type="submit" value="add">
-</form>

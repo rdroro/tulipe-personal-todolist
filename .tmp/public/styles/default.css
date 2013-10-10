@@ -23,9 +23,6 @@ h1 {
 	color: #fff!important;
 }
 
-.container {
-	/*background: #ccc;*/
-}
 
 #add-task-div {
 	margin-top: 5px;
@@ -36,12 +33,12 @@ h1 {
 }
 
 #task-div {
-	margin-top: 10px;
+	margin-top: 15px;
 }
 
 .task-categogy {
 	background: #fff;
-	border: 2px solid #1f1f1f;
+	border-right: 4px solid #1f1f1f;
 	padding: 0!important;
 	border-radius: 5px;
 }
@@ -50,6 +47,7 @@ h1 {
 	padding: 20px;
 	background-color: #f6fafe;
 	color: #6f8ba9;
+	border-bottom: 1px solid #d7e3f0;
 }
 
 .new-task {
@@ -66,7 +64,7 @@ h1 {
 }
 
 .sub-task {
-	border-right: 1px dotted #d7e3f0;
+	border-right: 1px dashed #d7e3f0;
 	width: 15%;
 }
 
@@ -75,53 +73,6 @@ h1 {
 	font-size: 14px;
 }
 
-.task {
-	border-radius: 5px;
-	/*background: #027eba;*/
-	background: #fff;
-	width: 255px;
-	position: relative;
-	margin: 10px;
-	float: left;
-}
-
-.title {
-	padding: 10px;
-	font-family: "Champagne";
-	font-size: 36px;
-	margin-bottom: 10px;
-	color: #555;
-}
-
-.footer {
-	position: relative;
-	top: auto;
-	bottom: 0;
-	background: #fff;
-	height: 34px;
-	border-radius: 5px;
-}
-
-.state {
-	background:  #027eba;
-	width: 225px;
-	height: 34px;
-	padding-top: 7px;
-	float: left;
-	border-radius: 0 0 0 5px;
-	padding-left: 20px;
-	color: #fff;
-	font-family: "Champagne";
-}
-
-.delete {
-	background: #036d9f;
-	padding-left: 9px;
-	padding-top: 10px;
-	height: 34px;
-	width: 30px;
-	float: left;
-	border-radius: 0 0 5px 0;
-	color : white;
-	font-size: small;
+.task-delete {
+	color: #ec974b;
 }
