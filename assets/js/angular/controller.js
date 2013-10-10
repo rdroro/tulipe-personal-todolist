@@ -10,8 +10,9 @@ function TaskListCtrl($scope, $routeParams, Task) {
   $scope.stateText = "important";
 
   $scope.add = function (parent) {
-    console.log(parent);
     var parent = typeof(parent) == "undefined" ? 0 : parent;
+    if (typeof($scope.titleText) == "undefined" || typeof($scope.stateText) == "undefined") { return false; }
+    console.log($scope.titleText);
     var task = {
       title: $scope.titleText,
       state: $scope.stateText,
@@ -43,15 +44,45 @@ function TaskListCtrl($scope, $routeParams, Task) {
 }
 
 function TaskDetailCtrl($scope, $routeParams, Task) {
-  $scope.cTask = Task.get({id: $routeParams.taskId});
-  $scope.parent = $scope.cTask.id;
+  $scope.cTask = Task.get({id: $routeParams.taskId}, function() {
+    $scope.parent = $scope.cTask.id;
+  });
+  
   $scope.taskDetail = Task.query({parent: $routeParams.taskId});
-   // Set the default value of state list for the view
-   $scope.stateText = "important";
- }
+
+  $scope.add = function() {
+    if (typeof($scope.titleText) == "undefined") { return false; }
+    var task = {
+      title: $scope.titleText,
+      state: $scope.cTask.state,
+      parent: $scope.parent
+    };
+    // Send HTTP POST request to backend to save new task
+    Task.create(task, function (createdTask, responseHeaders) {
+      $scope.taskDetail.push(createdTask);
+      $scope.titleText = '';
+    });
+  };
+  $scope.delete = function (id) {
+    var task = {
+      id:id
+    };
+    console.log($scope.taskDetail);
+    for (var i = 0; i < $scope.taskDetail.length; i++) {
+      if ( $scope.taskDetail[i].id === id ) {
+        // var index set the position of the task in $scope.tasks
+        var index = i;
+        Task.delete(task, function (value, responseHeaders){
+          // remove task in $scope.tasks if the server request succeded
+          $scope.taskDetail.splice(index, 1);
+        });
+      }
+    };
+  };
+}
 
 
 
 
- myApp.controller('TaskListCtrl', ['$scope', '$routeParams', 'Task', TaskListCtrl]);
- myApp.controller('TaskDetailCtrl', ['$scope', '$routeParams', 'Task',  TaskDetailCtrl]);
+myApp.controller('TaskListCtrl', ['$scope', '$routeParams', 'Task', TaskListCtrl]);
+myApp.controller('TaskDetailCtrl', ['$scope', '$routeParams', 'Task',  TaskDetailCtrl]);

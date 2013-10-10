@@ -1,7 +1,60 @@
-<div ng-repeat='task in taskDetail' class="new-task">
-	<div class="sub-task">-</div>
-	<div class='task-title'>{{task.title}}</div>
-	<div class="task-delete">
-		<span ng-click='delete(task.id)' class="glyphicon glyphicon-trash mouse-pointer"></span>
+<div class="container">
+
+
+	<div class="row" id='add-task-div'>
+		<div class='col-md-10 col-md-offset-1 col-xs-12'>
+			<form ng-submit='add(parent)' class="form-inline" role="form">
+				<div class="row">
+					<div class="form-group col-md-11 col-xs-11">
+						<input type="text" class="form-control input-lg" id="titleText" placeholder="Enter new Task here" ng-model='titleText'>
+					</div>
+					<div class="col-md-1 col-xs-1">
+						<button type="submit" id='btn-add-task' class="btn btn-primary btn-lg"><span class='glyphicon glyphicon-plus'></span></button>
+					</div>
+				</div>
+			</form>
+		</div>
 	</div>
+
+
+
+	<div class="row" id='task-div'>
+		
+
+		<div class="col-md-4 task-categogy">
+
+			<div ng-model='cTask' class="new-task row">
+
+				<div class="sub-task col-md-2 col-xs-2">2</div>
+
+				<div class='task-title col-md-10 col-xs-10'>{{cTask.title}}</div>
+
+			</div>
+
+		</div>
+
+
+		<div class="col-md-4 task-categogy">
+
+			<div class="row">
+				<div class="col-md-12 col-xs-12 task-categogy-title">Details</div>
+			</div>
+
+			<div ng-repeat='task in taskDetail' class="new-task row">
+
+				<div class="sub-task col-md-2 col-xs-2">-</div>
+
+				<div class='task-title col-md-9 col-xs-10'>{{task.title}}</div>
+
+				<div class="task-delete col-md-1 col-xs-1">
+					<span ng-click='delete(task.id)' class="glyphicon glyphicon-trash mouse-pointer"></span>
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+
+
 </div>

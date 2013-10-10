@@ -23,31 +23,24 @@ h1 {
 	color: #fff!important;
 }
 
-
-#add-task-div {
-	margin-top: 5px;
+.row {
+	margin: 0!important;
 }
 
-#btn-add-task {
-	margin-left: 10px;
+
+#add-task-div {
+	margin-top: 5px!important;
 }
 
 #task-div {
-	margin-top: 15px;
+	margin-top: 15px!important;
 }
 
 .task-categogy {
 	background: #fff;
-	border-right: 4px solid #1f1f1f;
 	padding: 0!important;
-	border-radius: 5px;
-}
-
-.task-categogy-title {
-	padding: 20px;
-	background-color: #f6fafe;
-	color: #6f8ba9;
-	border-bottom: 1px solid #d7e3f0;
+	/*border-radius: 5px;*/
+	border-left: 3px solid #1f1f1f;
 }
 
 .new-task {
@@ -55,8 +48,15 @@ h1 {
 	border-bottom: 1px solid #d7e3f0;
 }
 
-.new-task .sub-task, .task-title{
+/*.new-task .sub-task, .task-title .task-delete {
 	float: left;
+}*/
+
+.task-categogy-title {
+	padding: 20px;
+	background-color: #f6fafe;
+	color: #6f8ba9;
+	border-bottom: 1px solid #d7e3f0;
 }
 
 .sub-task, .task-title, .task-delete {
@@ -69,8 +69,8 @@ h1 {
 }
 
 .task-title {
-	width: 75%;
-	font-size: 14px;
+	width: 73%;
+	font-size: 12px;
 }
 
 .task-delete {
