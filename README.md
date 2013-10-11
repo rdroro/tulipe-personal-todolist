@@ -3,7 +3,7 @@
 Yet an other TodoList but ... with [Sails.js](http://sailsjs.org) and [AngularJS](http://angularjs.org/) and ... 
 it's pretty cool
 
-![Exemple image](/http://imgur.com/cF6LzPA)
+![Exemple image](http://imgur.com/cF6LzPA)
 
 With tulipe-personal-todolist you can manage your tasks and classify them into 3 categories :
 + Important
