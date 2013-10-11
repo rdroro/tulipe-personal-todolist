@@ -28,6 +28,13 @@ h1 {
 	margin: 0!important;
 }
 
+#logo {
+	position: absolute;
+	top: 5px;
+	left: 5px;
+}
+
+
 
 #add-task-div {
 	margin-top: 5px!important;

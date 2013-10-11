@@ -25,6 +25,8 @@ Here are the versions of dependencies currently used:
 + ejs: 0.8.4 (sails dependencies currently not used)
 + optimist: 0.3.4
 
+A Demo is available [here](tulipe-todo-list.herokuapp.com).
+
 ## Installation
 
 **DEV - Installation Process**
