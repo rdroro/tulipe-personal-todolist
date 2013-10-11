@@ -1,7 +1,7 @@
 {
     "name": "tulipe-personal-todolist",
     "private": true,
-    "version": "0.0.0",
+    "version": "0.1.0",
     "description": "Yet an other TodoList app built with sails.js and AngularJS",
     "dependencies": {
         "sails": "0.9.4",
