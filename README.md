@@ -10,7 +10,7 @@ With tulipe-personal-todolist you can manage your tasks and classify them into 3
 
 You can also add sub-task (only one depth for the moment)
 
-Responsive design for mobile devices with minimal width screen: 370px.
+Mobile devices are supported with minimal width screen: 370px.
 
 ## Requirements
 
