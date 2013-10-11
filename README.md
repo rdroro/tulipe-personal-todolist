@@ -1,6 +1,6 @@
 # tulipe-personal-todolist
 
-Yet an other TodoList but ... with [Sails.js](http://sailsjs.org) and [AngularJS](http://angularjs.org/) and ... 
+Yet an other TodoList but ... Built with [Sails.js](http://sailsjs.org) and [AngularJS](http://angularjs.org/) and ... 
 it's pretty cool
 
 ![Screenshot](http://i.imgur.com/cF6LzPA.png)
