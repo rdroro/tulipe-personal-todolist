@@ -57,3 +57,4 @@ Application is now available from [http://localhost:1337](http://localhost:1337)
 + Improve angular controllers (one controller is maybe enough ...) 
 + Connect angular services with socket.io
 + Add ACL for the backend
++ Documentation about Sails.js and AngularJS communication
