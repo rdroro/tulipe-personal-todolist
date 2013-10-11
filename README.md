@@ -35,7 +35,7 @@ Here are the versions of dependencies currently used:
 In development mode, all data are saved on disk in file : .tmp/.disk.db
 
 **If you want to test any modification, you can use [nodemon](https://npmjs.org/package/nodemon).
-`nodemon` automatically restart the application when files change. For that start this app by using:**
+`nodemon` automatically restart the application when files change. To do this, start app by using:**
 	
 	nodemon app.js
 
