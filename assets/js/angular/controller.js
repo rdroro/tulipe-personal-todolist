@@ -64,7 +64,7 @@ function TaskDetailCtrl($scope, $routeParams, Task) {
       $scope.titleText = '';
     });
   };
-  
+
   $scope.delete = function (id) {
     var task = {
       id:id
@@ -76,6 +76,7 @@ function TaskDetailCtrl($scope, $routeParams, Task) {
         Task.delete(task, function (value, responseHeaders){
           // remove task in $scope.tasks if the server request succeded
           $scope.taskDetail.splice(index, 1);
+          $scope.cTask.childCount = parseInt($scope.cTask.childCount)-1;
         });
       }
     };
