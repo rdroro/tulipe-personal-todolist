@@ -51,3 +51,5 @@ Application is now available from [http://localhost:1337](http://localhost:1337)
 + Do unit test for the sails backend
 + Implements Edit-In-Place
 + Improve angular controllers (one controller is maybe enough ...) 
++ Connect angular services with socket.io
++ Add ACL for the backend
