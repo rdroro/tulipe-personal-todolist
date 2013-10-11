@@ -16,7 +16,7 @@ Mobile devices are supported with minimal width screen: 370px.
 
 ## Requirements
 
-Tulipe-personal-todolist is a nodejs application builts with Sails.js (backend) and AngularJS (frontend).
+Tulipe-personal-todolist is a nodejs application built with Sails.js (backend) and AngularJS (frontend).
 Here are the versions of dependencies currently used:
 + nodejs v0.10.20 or higher
 + npm v1.3.11 or higher
