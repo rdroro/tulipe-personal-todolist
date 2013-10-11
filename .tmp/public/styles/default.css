@@ -17,6 +17,7 @@ body {
 	/*background: url('../images/black_lozenge.png');*/
 	background-color: #1f1f1f;
 	font-size: 18px;
+	min-width: 370px!important;
 }
 
 h1 {

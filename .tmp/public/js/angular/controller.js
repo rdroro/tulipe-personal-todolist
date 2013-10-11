@@ -12,11 +12,11 @@ function TaskListCtrl($scope, $routeParams, Task) {
   $scope.add = function (parent) {
     var parent = typeof(parent) == "undefined" ? 0 : parent;
     if (typeof($scope.titleText) == "undefined" || typeof($scope.stateText) == "undefined") { return false; }
-    console.log($scope.titleText);
     var task = {
       title: $scope.titleText,
       state: $scope.stateText,
-      parent: parent
+      parent: parent,
+      childCount: 0
     };
 
     // Send HTTP POST request to backend to save new task
@@ -60,14 +60,15 @@ function TaskDetailCtrl($scope, $routeParams, Task) {
     // Send HTTP POST request to backend to save new task
     Task.create(task, function (createdTask, responseHeaders) {
       $scope.taskDetail.push(createdTask);
+      $scope.cTask.childCount = parseInt($scope.cTask.childCount)+1;
       $scope.titleText = '';
     });
   };
+  
   $scope.delete = function (id) {
     var task = {
       id:id
     };
-    console.log($scope.taskDetail);
     for (var i = 0; i < $scope.taskDetail.length; i++) {
       if ( $scope.taskDetail[i].id === id ) {
         // var index set the position of the task in $scope.tasks

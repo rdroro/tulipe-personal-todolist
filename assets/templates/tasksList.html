@@ -1,10 +1,10 @@
 <div class="container">
 
 	<div class="row" id='add-task-div'>
-		<div class='col-md-10 col-md-offset-1 col-xs-12'>
+		<div class='col-md-10 col-md-offset-1 col-xs-11'>
 			<form ng-submit='add(parent)' class="form-inline" role="form">
 				<div class="row">
-					<div class="form-group col-md-8 col-xs-8">
+					<div class="form-group col-md-8 col-xs-7">
 						<input type="text" class="form-control input-lg" id="titleText" placeholder="Enter new Task here" ng-model='titleText'>
 					</div>
 					<div class="form-group col-md-3 col-xs-3">
@@ -32,7 +32,7 @@
 
 			<div ng-repeat='task in tasks | filter: {state: "important"}' class="new-task row">
 
-				<div class="sub-task col-md-2 col-xs-2">2</div>
+				<div class="sub-task col-md-2 col-xs-2">{{task.childCount}}</div>
 
 				<div class='task-title col-md-9 col-xs-9'><a href="#/task/{{task.id}}">{{task.title}}</a></div>
 
@@ -52,7 +52,7 @@
 
 			<div ng-repeat='task in tasks | filter: {state: "project"}' class="new-task row">
 
-				<div class="sub-task col-md-2 col-xs-2">2</div>
+				<div class="sub-task col-md-2 col-xs-2">{{task.childCount}}</div>
 
 				<div class='task-title col-md-9 col-xs-9'><a href="#/task/{{task.id}}">{{task.title}}</a></div>
 
@@ -72,7 +72,7 @@
 
 			<div ng-repeat='task in tasks | filter: {state: "reminder"}' class="new-task row">
 
-				<div class="sub-task col-md-2 col-xs-2">2</div>
+				<div class="sub-task col-md-2 col-xs-2">{{task.childCount}}</div>
 
 				<div class='task-title col-md-9 col-xs-9'><a href="#/task/{{task.id}}">{{task.title}}</a></div>
 

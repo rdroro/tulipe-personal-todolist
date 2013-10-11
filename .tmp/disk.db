@@ -1,39 +1,6 @@
 {
   "data": {
-    "task": [
-      {
-        "title": "Changer carte grise voiture",
-        "state": "important",
-        "parent": 0,
-        "createdAt": "2013-10-10T10:08:59.555Z",
-        "updatedAt": "2013-10-10T10:08:59.555Z",
-        "id": 47
-      },
-      {
-        "title": "Ophtalmo - 16/10 - 14h15",
-        "state": "reminder",
-        "parent": 0,
-        "createdAt": "2013-10-10T12:48:04.581Z",
-        "updatedAt": "2013-10-10T12:48:04.581Z",
-        "id": 55
-      },
-      {
-        "title": "DIY - Markup language",
-        "state": "project",
-        "parent": 0,
-        "createdAt": "2013-10-10T18:02:51.723Z",
-        "updatedAt": "2013-10-10T18:02:51.723Z",
-        "id": 79
-      },
-      {
-        "title": "COMMANDER CARTOUCHE",
-        "state": "important",
-        "parent": 0,
-        "createdAt": "2013-10-10T18:57:41.155Z",
-        "updatedAt": "2013-10-10T18:57:41.155Z",
-        "id": 99
-      }
-    ]
+    "task": []
   },
   "schema": {
     "task": {
@@ -56,7 +23,7 @@
   },
   "counters": {
     "task": {
-      "id": 105
+      "id": 166
     }
   }
 }

@@ -15,7 +15,8 @@ function TaskListCtrl($scope, $routeParams, Task) {
     var task = {
       title: $scope.titleText,
       state: $scope.stateText,
-      parent: parent
+      parent: parent,
+      childCount: 0
     };
 
     // Send HTTP POST request to backend to save new task
@@ -59,9 +60,11 @@ function TaskDetailCtrl($scope, $routeParams, Task) {
     // Send HTTP POST request to backend to save new task
     Task.create(task, function (createdTask, responseHeaders) {
       $scope.taskDetail.push(createdTask);
+      $scope.cTask.childCount = parseInt($scope.cTask.childCount)+1;
       $scope.titleText = '';
     });
   };
+  
   $scope.delete = function (id) {
     var task = {
       id:id
