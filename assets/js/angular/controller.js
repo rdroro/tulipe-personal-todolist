@@ -11,9 +11,10 @@ function TaskListCtrl($scope, $routeParams, Task) {
 
   $scope.add = function (parent) {
     var parent = typeof(parent) == "undefined" ? 0 : parent;
-    if (typeof($scope.titleText) == "undefined" || typeof($scope.stateText) == "undefined") { return false; }
+    var taskText = typeof($scope.titleText) == "undefined" ? "" : $scope.titleText.trim();
+    if (taskText == "" || typeof($scope.stateText) == "undefined") { return false; }
     var task = {
-      title: $scope.titleText,
+      title: taskText,
       state: $scope.stateText,
       parent: parent,
       childCount: 0
